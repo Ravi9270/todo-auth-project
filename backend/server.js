@@ -1,3 +1,7 @@
+require("dotenv").config();
+
+
+
 const express = require("express");
 const mysql = require("mysql2");
 const cors = require("cors");
@@ -8,11 +12,11 @@ app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-    host: "mysql-10c15b48-raviaur3yadav-70d7.i.aivencloud.com",
-    user: "avnadmin",
-    password: "",
-    database: "defaultdb",
-    port: 22552,
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+    port: process.env.DB_PORT,
     ssl: {
         rejectUnauthorized: false
     }

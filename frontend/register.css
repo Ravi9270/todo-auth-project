@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: #f0f2f5;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 430px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.close-btn{
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.meta-logo{
+    color: #1877f2;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.heading h1{
+    font-size: 32px;
+    margin-top: 15px;
+}
+
+.heading p{
+    color: gray;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.input-group{
+    margin-bottom: 20px;
+}
+
+.input-group label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.input-group input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+.birthday-box{
+    display: flex;
+    gap: 10px;
+}
+
+.birthday-box select{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0 10px;
+}
+
+.submit-btn{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: #1877f2;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-btn{
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.login-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
